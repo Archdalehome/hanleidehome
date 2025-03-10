@@ -1,0 +1,11 @@
+{
+  "name": "archdalehome.com",
+  "version": "1.0.0",
+  "description": "Hanleide Home Textiles Website",
+  "main": "index.html",
+  "scripts": {
+    "build": "node build_cloudflare.js"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}
