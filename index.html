@@ -63,7 +63,7 @@
         }
 
         .main-content {
-            display: none;
+            display: block;
         }
         .nav-bar {
             background-color: white;
@@ -372,41 +372,8 @@
     </div>
 
     <script>
-        // 检查登录状态
-        function checkLoginStatus() {
-            const isLoggedIn = sessionStorage.getItem('isLoggedIn');
-            const loginContainer = document.getElementById('loginContainer');
-            const mainContent = document.getElementById('mainContent');
-
-            if (isLoggedIn === 'true') {
-                loginContainer.style.display = 'none';
-                mainContent.style.display = 'block';
-                displayImages(); // 加载图片
-            } else {
-                loginContainer.style.display = 'flex';
-                mainContent.style.display = 'none';
-            }
-        }
-
-        // 处理登录
-        function handleLogin(event) {
-            event.preventDefault();
-            const username = document.getElementById('username').value;
-            const password = document.getElementById('password').value;
-            const loginError = document.getElementById('loginError');
-
-            if (username === 'Partner' && password === '01083810') {
-                sessionStorage.setItem('isLoggedIn', 'true');
-                checkLoginStatus();
-                loginError.style.display = 'none';
-            } else {
-                loginError.style.display = 'block';
-                sessionStorage.removeItem('isLoggedIn');
-            }
-        }
-
-        // 页面加载时检查登录状态
-        window.addEventListener('load', checkLoginStatus);
+        // 页面加载时直接显示图片
+        window.addEventListener('load', displayImages);
     </script>
 </body>
 </html>
