@@ -1,6 +1,22 @@
 // 判断是否为本地开发环境
 const isLocalDev = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
 
+// 解析图片文件名获取信息
+function parseImageFileName(fileName) {
+    const regex = /Category ([^,]+), Name ([^,]+), Size ([^,]+), Description(.+)\./;
+    const matches = fileName.match(regex);
+    
+    if (matches) {
+        return {
+            category: matches[1].trim(),
+            name: matches[2].trim(),
+            size: matches[3].trim(),
+            description: matches[4].trim()
+        };
+    }
+    return null;
+}
+
 // 从目录中加载图片
 async function loadImagesFromDirectory() {
     try {
@@ -17,9 +33,13 @@ async function loadImagesFromDirectory() {
             })
             .map(link => {
                 const href = link.getAttribute('href');
+                const decodedName = decodeURIComponent(href);
+                const imageInfo = parseImageFileName(decodedName);
+                
                 return {
                     path: `images/${href}`,
-                    name: decodeURIComponent(href)
+                    name: decodedName,
+                    ...(imageInfo || {})
                 };
             });
 

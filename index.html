@@ -203,9 +203,7 @@
             text-align: center;
             color: #333;
             font-size: 14px;
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
+            line-height: 1.5;
         }
 
         .image-info {
@@ -213,6 +211,11 @@
             text-align: center;
             color: #666;
             font-size: 12px;
+            line-height: 1.5;
+        }
+
+        .category, .name, .size, .description {
+            margin: 5px 0;
         }
 
         .price, .size {
@@ -306,7 +309,33 @@
             const gallery = document.getElementById('gallery');
             gallery.innerHTML = '';
             
+            // 按category对图片进行分组
+            const imagesByCategory = {};
             images.forEach(imageData => {
+                const fileName = imageData.path.split('/').pop();
+                const matches = fileName.match(/Category ([^,]+), Name ([^,]+), Size ([^,]+), Description(.+)\./i);
+                if (matches) {
+                    const category = matches[1];
+                    if (!imagesByCategory[category]) {
+                        imagesByCategory[category] = [];
+                    }
+                    imagesByCategory[category].push(imageData);
+                }
+            });
+
+            // 为每个分类创建一个区域
+            Object.entries(imagesByCategory).forEach(([category, categoryImages]) => {
+                // 创建分类标题
+                const categoryTitle = document.createElement('h2');
+                categoryTitle.style.width = '100%';
+                categoryTitle.style.borderBottom = '2px solid #333';
+                categoryTitle.style.padding = '10px 0';
+                categoryTitle.style.margin = '20px 0';
+                categoryTitle.textContent = category;
+                gallery.appendChild(categoryTitle);
+
+                // 显示该分类下的所有图片
+                categoryImages.forEach(imageData => {
                 const imagePath = imageData.path;
                 const imageCard = document.createElement('div');
                 imageCard.className = 'image-card';
@@ -324,6 +353,32 @@
                 
                 const title = document.createElement('div');
                 title.className = 'title';
+                
+                // 从文件名中提取信息
+                const fileName = imageData.path.split('/').pop();
+                const matches = fileName.match(/Category ([^,]+), Name ([^,]+), Size ([^,]+), Description(.+)\./i);
+                
+                if (matches) {
+                    const category = document.createElement('div');
+                    category.className = 'category';
+                    category.textContent = `类别：${matches[1]}`;
+                    title.appendChild(category);
+                    
+                    const name = document.createElement('div');
+                    name.className = 'name';
+                    name.textContent = `名称：${matches[2]}`;
+                    title.appendChild(name);
+                    
+                    const size = document.createElement('div');
+                    size.className = 'size';
+                    size.textContent = `尺寸：${matches[3]}`;
+                    title.appendChild(size);
+                    
+                    const description = document.createElement('div');
+                    description.className = 'description';
+                    description.textContent = `描述：${matches[4]}`;
+                    title.appendChild(description);
+                }
                 title.textContent = imageData.title || '';
                 
                 if (imageData.price) {
