@@ -1,13 +1,6 @@
 {
   "images": [
     {
-      "path": "images/Linen Square Pillow (20x20inch) 39元.jpg",
-      "name": "Linen Square Pillow (20x20inch) 39元.jpg",
-      "title": "Linen Square Pillow",
-      "price": "39",
-      "size": "20x20inch"
-    },
-    {
       "path": "images/Linen Square Pillow (20x20inch) 9元.jpg",
       "name": "Linen Square Pillow (20x20inch) 9元.jpg",
       "title": "Linen Square Pillow",
@@ -20,6 +13,13 @@
       "title": "Napkins in Linen with self-Fringe",
       "price": "199",
       "size": "22 inch"
+    },
+    {
+      "path": "images/Pillow in Linen  (Square 20x20inch) 39元.jpg",
+      "name": "Pillow in Linen  (Square 20x20inch) 39元.jpg",
+      "title": "Pillow in Linen",
+      "price": "39",
+      "size": "Square 20x20inch"
     },
     {
       "path": "images/Pillow in Linen (20x20inch)  599元.jpg",
