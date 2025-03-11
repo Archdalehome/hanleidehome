@@ -45,7 +45,9 @@ def get_image_files():
                 "price": price,
                 "size": size
             })
-    return images
+    # 按文件名字母顺序排序
+    sorted_images = sorted(images, key=lambda x: x['name'].lower())
+    return sorted_images
 
 # 更新images.json文件
 def update_images_json():
