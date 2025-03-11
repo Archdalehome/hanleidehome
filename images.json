@@ -22,6 +22,13 @@
       "size": "200x104x82"
     },
     {
+      "path": "images/Linen Square Pillow (20x20inch)  59元.jpg",
+      "name": "Linen Square Pillow (20x20inch)  59元.jpg",
+      "title": "Linen Square Pillow",
+      "price": "59",
+      "size": "20x20inch"
+    },
+    {
       "path": "images/Linen Square Pillow (20x20inch) 99元.jpg",
       "name": "Linen Square Pillow (20x20inch) 99元.jpg",
       "title": "Linen Square Pillow",
@@ -34,13 +41,6 @@
       "title": "T20911 大理石咖啡桌",
       "price": "5999",
       "size": "100x100x46cm"
-    },
-    {
-      "path": "images/Linen Square Pillow (20x20inch)  699元.jpg",
-      "name": "Linen Square Pillow (20x20inch)  699元.jpg",
-      "title": "Linen Square Pillow",
-      "price": "699",
-      "size": "20x20inch"
     }
   ]
 }
