@@ -1,13 +1,6 @@
 {
   "images": [
     {
-      "path": "images/Linen Square Pillow (20x20inch)  59元.jpg",
-      "name": "Linen Square Pillow (20x20inch)  59元.jpg",
-      "title": "Linen Square Pillow",
-      "price": "59",
-      "size": "20x20inch"
-    },
-    {
       "path": "images/Linen Square Pillow (20x20inch) 39元.jpg",
       "name": "Linen Square Pillow (20x20inch) 39元.jpg",
       "title": "Linen Square Pillow",
@@ -27,6 +20,13 @@
       "title": "Napkins with self-Fringe 199RMB",
       "price": "",
       "size": "22 inch"
+    },
+    {
+      "path": "images/Pillow in Linen Fabric (20x20inch)  Welt edge元.jpg",
+      "name": "Pillow in Linen Fabric (20x20inch)  Welt edge元.jpg",
+      "title": "Pillow in Linen Fabric Welt edge元",
+      "price": "",
+      "size": "20x20inch"
     },
     {
       "path": "images/Throw Blanket Linen Fringe-edge(30x30inch) 590 RMB.jpg",
