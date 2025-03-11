@@ -341,14 +341,14 @@
                 if (imageData.price) {
                     const price = document.createElement('div');
                     price.className = 'price';
-                    price.textContent = `Price：$${imageData.price}`;
+                    price.textContent = `$${imageData.price}`;
                     imageInfo.appendChild(price);
                 }
                 
                 if (imageData.size) {
                     const size = document.createElement('div');
                     size.className = 'size';
-                    size.textContent = `Size：${imageData.size}`;
+                    size.textContent = `${imageData.size}`;
                     imageInfo.appendChild(size);
                 }
                 
