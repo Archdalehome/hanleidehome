@@ -1,13 +1,6 @@
 {
   "images": [
     {
-      "path": "images/Linen Square Pillow (20x20inch) 799元.jpg",
-      "name": "Linen Square Pillow (20x20inch) 799元.jpg",
-      "title": "Linen Square Pillow",
-      "price": "799",
-      "size": "20x20inch"
-    },
-    {
       "path": "images/Linen Square Pillow (20x21inch) 699元.jpg",
       "name": "Linen Square Pillow (20x21inch) 699元.jpg",
       "title": "Linen Square Pillow",
@@ -27,6 +20,13 @@
       "title": "F18910 全棉割绒布三人沙发",
       "price": "9890",
       "size": "200x104x82"
+    },
+    {
+      "path": "images/Linen Square Pillow (20x20inch) 99元.jpg",
+      "name": "Linen Square Pillow (20x20inch) 99元.jpg",
+      "title": "Linen Square Pillow",
+      "price": "99",
+      "size": "20x20inch"
     },
     {
       "path": "images/T20911 大理石咖啡桌 (100x100x46cm)  5999元.jpg",
