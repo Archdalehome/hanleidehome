@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Card, Form, Input, Button, message } from 'antd';
 import { MailOutlined, EnvironmentOutlined } from '@ant-design/icons';
 import emailjs from '@emailjs/browser';
@@ -10,20 +10,24 @@ const ContactUs = () => {
   const [form] = Form.useForm();
   const [loading, setLoading] = useState(false);
 
+  useEffect(() => {
+    // 初始化EmailJS
+    emailjs.init('HLbs9qc6BCnaZVw8u');
+  }, []);
+
   const onFinish = async (values) => {
     setLoading(true);
     try {
       await emailjs.send(
-        'service_aqxvpzm',
-        'template_aqxvpzm',
+        'service_ygcz5ga', // 替换为您的Service ID
+        'template_smvljf6', // 替换为您的Template ID
         {
           to_email: 'sales@hanleidehome.com',
           from_name: values.name,
           from_email: values.email,
           subject: values.subject,
           message: values.message,
-        },
-        'Aq-xvpzm_123456'
+        }
       );
       message.success('消息已成功发送！');
       form.resetFields();
