@@ -18,24 +18,32 @@ const ContactUs = () => {
   const onFinish = async (values) => {
     setLoading(true);
     try {
-      console.log('开始发送邮件...', values);
+      console.log('开始发送邮件，表单数据:', JSON.stringify(values, null, 2));
+      console.log('EmailJS配置信息 - Service ID:', 'service_ygcz5ga', ', Template ID:', 'template_smvljf6');
+      
+      const templateParams = {
+        to_email: 'sales@hanleidehome.com',
+        from_name: values.name,
+        from_email: values.email,
+        subject: values.subject,
+        message: values.message,
+      };
+      
+      console.log('准备发送的邮件参数:', JSON.stringify(templateParams, null, 2));
+      
       const result = await emailjs.send(
         'service_ygcz5ga',
         'template_smvljf6',
-        {
-          to_email: 'sales@hanleidehome.com',
-          from_name: values.name,
-          from_email: values.email,
-          subject: values.subject,
-          message: values.message,
-        }
+        templateParams
       );
-      console.log('邮件发送成功:', result);
-      message.success('消息已成功发送！');
+      
+      console.log('邮件发送成功，服务器响应:', JSON.stringify(result, null, 2));
+      message.success('消息已成功发送！我们会尽快回复您。');
       form.resetFields();
     } catch (error) {
-      console.error('邮件发送失败:', error);
-      message.error(`发送失败: ${error.message || '请稍后重试'}`);
+      console.error('邮件发送失败 - 详细错误信息:', error);
+      console.error('错误堆栈:', error.stack);
+      message.error(`发送失败: ${error.message || '发送过程中出现错误，请稍后重试'}`);
     } finally {
       setLoading(false);
     }

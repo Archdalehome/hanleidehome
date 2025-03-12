@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Hanleide Home Textiles</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        .nav-bar {
+            background-color: white;
+            padding: 15px 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            font-size: 16px;
+            color: #333;
+            position: relative;
+            border-radius: 8px;
+        }
+
+        .nav-bar span {
+            display: inline-flex;
+            align-items: center;
+        }
+
+        .nav-bar .menu-icon {
+            margin-right: 10px;
+            cursor: pointer;
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            padding: 4px;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+        }
+
+        .nav-bar .menu-icon:hover {
+            background-color: #f5f5f5;
+        }
+
+        .dropdown-menu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 20px;
+            background-color: white;
+            min-width: 180px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            border-radius: 4px;
+            z-index: 1000;
+            padding: 8px 0;
+        }
+
+        .dropdown-menu.show {
+            display: block;
+            animation: fadeIn 0.2s ease;
+        }
+
+        .dropdown-menu a {
+            display: block;
+            padding: 10px 20px;
+            color: #333;
+            text-decoration: none;
+            transition: background-color 0.2s;
+        }
+
+        .dropdown-menu a:hover {
+            background-color: #f5f5f5;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        #root {
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="nav-bar">
+        <span>
+            <svg class="menu-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="3" y1="12" x2="21" y2="12"></line>
+                <line x1="3" y1="6" x2="21" y2="6"></line>
+                <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+            Hanleide Home Textiles/Contact Us
+        </span>
+        <div class="dropdown-menu" id="dropdownMenu">
+            <a href="about.html">About us</a>
+            <a href="index.html">Our Product</a>
+            <a href="contact.html">Contact us</a>
+        </div>
+    </div>
+
+    <div id="root">
+        <div class="contact-container">
+            <h1>Contact Us</h1>
+            <div class="contact-form">
+                <h2>Send Inquiry</h2>
+                <form id="inquiryForm">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="4" required></textarea>
+                    </div>
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+            <div class="contact-info">
+                <div class="info-section">
+                    <h2>Fabric Factory Address</h2>
+                    <p>No. 10 Yuebao Road, Dingqiao Town, Haining City, Zhejiang Province, CN</p>
+                </div>
+                <div class="info-section">
+                    <h2>Showroom Address</h2>
+                    <p>No.2 Fenghuang Road, Dingqiao Town, Haining City, Zhejiang Province, CN</p>
+                </div>
+                <div class="info-section">
+                    <h2>Contact Information</h2>
+                    <p>Email: sales@hanleidehome.com</p>
+                </div>
+            </div>
+        </div>
+        <style>
+            .contact-container {
+                max-width: 800px;
+                margin: 0 auto;
+            }
+            h1 {
+                text-align: center;
+                color: #333;
+                margin-bottom: 40px;
+            }
+            .contact-info {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+                gap: 30px;
+                margin-bottom: 50px;
+            }
+            .info-section {
+                background: #f8f9fa;
+                padding: 20px;
+                border-radius: 8px;
+            }
+            .info-section h2 {
+                color: #2c3e50;
+                font-size: 1.2em;
+                margin-bottom: 15px;
+            }
+            .info-section p {
+                color: #666;
+                margin: 5px 0;
+            }
+            .contact-form {
+                background: #f8f9fa;
+                padding: 30px;
+                border-radius: 8px;
+            }
+            .form-group {
+                margin-bottom: 20px;
+            }
+            label {
+                display: block;
+                margin-bottom: 8px;
+                color: #2c3e50;
+            }
+            input, textarea {
+                width: 100%;
+                padding: 10px;
+                border: 1px solid #ddd;
+                border-radius: 4px;
+                font-size: 16px;
+            }
+            textarea {
+                resize: vertical;
+            }
+            button {
+                background: #2c3e50;
+                color: white;
+                padding: 12px 24px;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+                font-size: 16px;
+                transition: background 0.3s;
+            }
+            button:hover {
+                background: #34495e;
+            }
+            @media (max-width: 768px) {
+                .contact-info {
+                    grid-template-columns: 1fr;
+                }
+                #root {
+                    padding: 20px;
+                }
+            }
+        </style>
+    </div>
+
+    <script type="module">
+        // 添加菜单切换功能
+        document.querySelector('.menu-icon').addEventListener('click', function(e) {
+            e.stopPropagation();
+            const dropdownMenu = document.getElementById('dropdownMenu');
+            dropdownMenu.classList.toggle('show');
+        });
+
+        // 点击页面其他地方关闭菜单
+        document.addEventListener('click', function() {
+            const dropdownMenu = document.getElementById('dropdownMenu');
+            if (dropdownMenu.classList.contains('show')) {
+                dropdownMenu.classList.remove('show');
+            }
+        });
+    </script>
+</body>
+</html>

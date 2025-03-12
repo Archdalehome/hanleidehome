@@ -1,28 +1,18 @@
 {
   "images": [
     {
-      "path": "images/Category Sofa, Name Ben,  Size 60x30x40inch, Description100% leather white fabric loveseat.jpg",
-      "name": "Category Sofa, Name Ben,  Size 60x30x40inch, Description100% leather white fabric loveseat.jpg",
-      "category": "Sofa",
-      "name": "Ben",
-      "size": "60x30x40inch",
-      "description": "100% leather white fabric loveseat"
+      "path": "images/1[Pillow] 100% Cotton ball pillow  (12 inch)  499 元.jpg",
+      "name": "1[Pillow] 100% Cotton ball pillow  (12 inch)  499 元.jpg",
+      "title": "1[Pillow] 100% Cotton ball pillow",
+      "price": "499",
+      "size": "12 inch"
     },
     {
-      "path": "images/Category Sofa, Name Ben,  Size 90x30x40inch, Description100% leather white fabric sofa.jpg",
-      "name": "Category Sofa, Name Ben,  Size 90x30x40inch, Description100% leather white fabric sofa.jpg",
-      "category": "Sofa",
-      "name": "Ben",
-      "size": "90x30x40inch",
-      "description": "100% leather white fabric sofa"
-    },
-    {
-      "path": "images/Category Pillow, Name Sarah,  Size 20x20inch, Description100% Linen white fabric pillow.jpg",
-      "name": "Category Pillow, Name Sarah,  Size 20x20inch, Description100% Linen white fabric pillow.jpg",
-      "category": "Pillow",
-      "name": "Sarah",
-      "size": "20x20inch",
-      "description": "100% Linen white fabric pillow"
+      "path": "images/2[Curtain] Linen blackout curtain (180x220cm) 699 元.jpg",
+      "name": "2[Curtain] Linen blackout curtain (180x220cm) 699 元.jpg",
+      "title": "2[Curtain] Linen blackout curtain",
+      "price": "699",
+      "size": "180x220cm"
     }
   ]
 }
