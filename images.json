@@ -1,14 +1,6 @@
 {
   "images": [
     {
-      "path": "images/Pillow in Cotton (Flange edge 20x20inch).jpg",
-      "name": "Pillow in Cotton (Flange edge 20x20inch).jpg",
-      "title": "Pillow in Cotton",
-      "price": "",
-      "size": "Flange edge 20x20inch",
-      "category": ""
-    },
-    {
       "path": "images/[Curtain] Linen blackout curtain (180x220cm) 699元.jpg",
       "name": "[Curtain] Linen blackout curtain (180x220cm) 699元.jpg",
       "title": "Linen blackout curtain",
@@ -46,6 +38,14 @@
       "title": "Cotton Ball Pillow",
       "price": "",
       "size": "dia. 12 inch",
+      "category": "Pillow"
+    },
+    {
+      "path": "images/[Pillow] Cotton Square Pillow with Flange  (20x20inch).jpg",
+      "name": "[Pillow] Cotton Square Pillow with Flange  (20x20inch).jpg",
+      "title": "Cotton Square Pillow with Flange",
+      "price": "",
+      "size": "20x20inch",
       "category": "Pillow"
     },
     {
