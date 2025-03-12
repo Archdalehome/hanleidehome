@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,6 +10,7 @@
             padding: 20px;
             background-color: #f5f5f5;
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            line-height: 1.8;
         }
 
         .nav-bar {
@@ -20,6 +21,7 @@
             font-size: 16px;
             color: #333;
             position: relative;
+            border-radius: 8px;
         }
 
         .nav-bar span {
@@ -35,6 +37,7 @@
             height: 24px;
             padding: 4px;
             border-radius: 4px;
+            transition: background-color 0.3s ease;
         }
 
         .nav-bar .menu-icon:hover {
@@ -86,26 +89,62 @@
         }
 
         .about-section {
-            margin-bottom: 40px;
+            margin-bottom: 50px;
+            padding-bottom: 30px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .about-section:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
         }
 
         h1 {
             color: #333;
-            font-size: 32px;
-            margin-bottom: 30px;
+            font-size: 36px;
+            margin-bottom: 40px;
             text-align: center;
+            position: relative;
+            padding-bottom: 20px;
+        }
+
+        h1:after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 3px;
+            background-color: #333;
         }
 
         h2 {
             color: #444;
-            font-size: 24px;
-            margin-bottom: 20px;
+            font-size: 26px;
+            margin-bottom: 25px;
+            position: relative;
+            padding-left: 15px;
+        }
+
+        h2:before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 4px;
+            background-color: #666;
+            border-radius: 2px;
         }
 
         p {
             color: #666;
-            line-height: 1.6;
+            line-height: 1.8;
             margin-bottom: 20px;
+            font-size: 16px;
+            text-align: justify;
         }
 
         .footer {
@@ -114,6 +153,24 @@
             margin-top: 40px;
             color: #666;
             font-size: 14px;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 25px;
+            }
+
+            h1 {
+                font-size: 28px;
+            }
+
+            h2 {
+                font-size: 22px;
+            }
+
+            p {
+                font-size: 15px;
+            }
         }
     </style>
 </head>
@@ -138,25 +195,25 @@
         <h1>About Hanleide Home Textiles</h1>
         
         <div class="about-section">
-            <h2>公司简介</h2>
-            <p>Hanleide Home Textiles (HHT) 是一家专注于高端家用纺织品的领先企业。我们致力于将舒适、风格和品质完美融合，专门从事麻棉混纺高端家用面料及其衍生家居产品的研发和生产，为每个生活空间带来精致与实用的完美结合。</p>
+            <h2>Company Profile</h2>
+            <p>Hanleide Home Textiles (HHT) is a leading enterprise specializing in high-end home textiles. We are dedicated to perfectly combining comfort, style, and quality, focusing on the research and development of premium linen-cotton blended home fabrics and their derivative home products. Our mission is to bring an exquisite blend of sophistication and practicality to every living space.</p>
         </div>
 
         <div class="about-section">
-            <h2>产品组合</h2>
-            <p>我们的产品系列包含多种精心制作的家居用品：从柔软舒适的枕头，为您的一天画上完美句点；到为任何座椅增添优雅与舒适的靠垫；再到在寒冷夜晚给您温暖的精美毯子，以及为您的餐桌增添优雅魅力的餐巾。我们的窗帘不仅美化您的窗户，还能提供隐私保护和光线调节，全方位提升您的居家环境。</p>
+            <h2>Product Portfolio</h2>
+            <p>Our product line encompasses a carefully curated selection of home furnishings: from soft, comfortable pillows that perfectly end your day; to elegant cushions that add comfort and style to any seating; to beautiful blankets that provide warmth on cold nights; and sophisticated napkins that enhance your dining experience. Our curtains not only beautify your windows but also provide privacy protection and light control, comprehensively elevating your home environment.</p>
         </div>
 
         <div class="about-section">
-            <h2>业务模式</h2>
-            <p>HHT拥有双重业务模式：</p>
-            <p>1. 为全球高端家居客户提供顶级OEM服务。我们的现代化生产设施配备skilled工匠和技术人员，确保每件产品都符合最严格的标准。我们深知品牌标识的重要性，与合作伙伴密切合作，将设计理念从概念转化为最终产品。</p>
-            <p>2. 与国际知名面料生产商开展合作开发和销售。这种协同效应让我们能够将麻棉材料的专业知识与全球创新设计理念相结合，推出引领潮流的产品，以独特的质地、图案和功能性为家居装饰树立新标准。</p>
+            <h2>Business Model</h2>
+            <p>HHT operates on a dual business model:</p>
+            <p>1. We provide premium OEM services to high-end home furnishing clients worldwide. Our modern production facilities are staffed with skilled artisans and technicians who ensure every product meets the most stringent standards. Understanding the importance of brand identity, we work closely with our partners to transform design concepts into final products.</p>
+            <p>2. We collaborate with internationally renowned fabric manufacturers in development and sales. This synergy allows us to combine our expertise in linen-cotton materials with global innovative design concepts, launching trend-setting products that set new standards in home decoration with unique textures, patterns, and functionality.</p>
         </div>
 
         <div class="about-section">
-            <h2>质量承诺</h2>
-            <p>质量承诺贯穿我们运营的每个环节。我们只选用最优质的麻和棉纤维，确保产品的耐用性、透气性和奢华质感。从原材料检验到成品测试，每个生产阶段都实施严格的质量控制措施。这种对质量的执着使我们赢得了客户的信任和忠诚，成为他们首选的家用纺织品合作伙伴。</p>
+            <h2>Quality Commitment</h2>
+            <p>Our commitment to quality permeates every aspect of our operations. We select only the finest linen and cotton fibers to ensure durability, breathability, and luxurious feel in our products. Strict quality control measures are implemented at every production stage, from raw material inspection to finished product testing. This dedication to quality has earned us the trust and loyalty of our customers, making us their preferred partner in home textiles.</p>
         </div>
     </div>
 
@@ -165,14 +222,14 @@
     </footer>
 
     <script>
-        // 添加菜单切换功能
+        // Toggle menu functionality
         document.querySelector('.menu-icon').addEventListener('click', function(e) {
             e.stopPropagation();
             const dropdownMenu = document.getElementById('dropdownMenu');
             dropdownMenu.classList.toggle('show');
         });
 
-        // 点击页面其他地方关闭菜单
+        // Close menu when clicking outside
         document.addEventListener('click', function() {
             const dropdownMenu = document.getElementById('dropdownMenu');
             if (dropdownMenu.classList.contains('show')) {
