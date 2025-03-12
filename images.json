@@ -9,14 +9,6 @@
       "category": ""
     },
     {
-      "path": "images/Pillow in Cotton  (Ball 12 inch).jpg",
-      "name": "Pillow in Cotton  (Ball 12 inch).jpg",
-      "title": "Pillow in Cotton",
-      "price": "",
-      "size": "Ball 12 inch",
-      "category": ""
-    },
-    {
       "path": "images/Pillow in Cotton (Flange edge 20x20inch).jpg",
       "name": "Pillow in Cotton (Flange edge 20x20inch).jpg",
       "title": "Pillow in Cotton",
@@ -54,6 +46,14 @@
       "title": "100% Cotton ball pillow",
       "price": "499",
       "size": "12 inch",
+      "category": "Pillow"
+    },
+    {
+      "path": "images/[Pillow] Cotton Ball Pillow  ( dia. 12 inch).jpg",
+      "name": "[Pillow] Cotton Ball Pillow  ( dia. 12 inch).jpg",
+      "title": "Cotton Ball Pillow",
+      "price": "",
+      "size": "dia. 12 inch",
       "category": "Pillow"
     }
   ]
