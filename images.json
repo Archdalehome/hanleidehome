@@ -33,6 +33,14 @@
       "category": "2Throw Blanket"
     },
     {
+      "path": "images/[3Napkins] Linen self-Fringe Napkin ( 22x 22 inch).jpg",
+      "name": "[3Napkins] Linen self-Fringe Napkin ( 22x 22 inch).jpg",
+      "title": "Linen self-Fringe Napkin",
+      "price": "",
+      "size": "22x 22 inch",
+      "category": "3Napkins"
+    },
+    {
       "path": "images/[4Curtains] Linen blackout curtain (180x220cm) .jpg",
       "name": "[4Curtains] Linen blackout curtain (180x220cm) .jpg",
       "title": "Linen blackout curtain",
@@ -55,14 +63,6 @@
       "price": "",
       "size": "20x20inch",
       "category": ""
-    },
-    {
-      "path": "images/[Napkins] Linen self-Fringe Napkin ( 22x 22 inch).jpg",
-      "name": "[Napkins] Linen self-Fringe Napkin ( 22x 22 inch).jpg",
-      "title": "Linen self-Fringe Napkin",
-      "price": "",
-      "size": "22x 22 inch",
-      "category": "Napkins"
     }
   ]
 }
