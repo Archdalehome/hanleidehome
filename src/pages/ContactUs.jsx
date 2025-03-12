@@ -12,7 +12,9 @@ const ContactUs = () => {
 
   useEffect(() => {
     // 初始化EmailJS
-    emailjs.init('HLbs9qc6BCnaZVw8u');
+    emailjs.init({
+      publicKey: 'HLbs9qc6BCnaZVw8u',
+    });
   }, []);
 
   const onFinish = async (values) => {
