@@ -4,7 +4,8 @@
   "description": "Archdale Home Website",
   "main": "index.html",
   "scripts": {
-    "build": "node build_cloudflare.js"
+    "build": "node build_cloudflare.js",
+    "dev": "vite"
   },
   "dependencies": {
     "@emailjs/browser": "^4.4.1",

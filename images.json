@@ -1,16 +1,16 @@
 {
   "images": [
     {
-      "path": "images/1[Pillow] 100% Cotton ball pillow  (12 inch)  499 元.jpg",
-      "name": "1[Pillow] 100% Cotton ball pillow  (12 inch)  499 元.jpg",
-      "title": "1[Pillow] 100% Cotton ball pillow",
+      "path": "images/pillow_cotton_ball_12inch.jpg",
+      "name": "pillow_cotton_ball_12inch.jpg",
+      "title": "Cotton Ball Pillow",
       "price": "499",
       "size": "12 inch"
     },
     {
-      "path": "images/2[Curtain] Linen blackout curtain (180x220cm) 699 元.jpg",
-      "name": "2[Curtain] Linen blackout curtain (180x220cm) 699 元.jpg",
-      "title": "2[Curtain] Linen blackout curtain",
+      "path": "images/curtain_linen_blackout_180x220.jpg",
+      "name": "curtain_linen_blackout_180x220.jpg",
+      "title": "Linen Blackout Curtain",
       "price": "699",
       "size": "180x220cm"
     }
