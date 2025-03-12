@@ -9,14 +9,6 @@
       "category": ""
     },
     {
-      "path": "images/Pillow in Linen (Welt edge 20x20inch).jpg",
-      "name": "Pillow in Linen (Welt edge 20x20inch).jpg",
-      "title": "Pillow in Linen",
-      "price": "",
-      "size": "Welt edge 20x20inch",
-      "category": ""
-    },
-    {
       "path": "images/[Curtain] Linen blackout curtain (180x220cm) 699元.jpg",
       "name": "[Curtain] Linen blackout curtain (180x220cm) 699元.jpg",
       "title": "Linen blackout curtain",
@@ -31,6 +23,14 @@
       "price": "",
       "size": "22x 22 inch",
       "category": "Napkins"
+    },
+    {
+      "path": "images/[Pillow]  Linen Square Pillow with Welt (20x20inch).jpg",
+      "name": "[Pillow]  Linen Square Pillow with Welt (20x20inch).jpg",
+      "title": "Linen Square Pillow with Welt",
+      "price": "",
+      "size": "20x20inch",
+      "category": "Pillow"
     },
     {
       "path": "images/[Pillow] 100% Cotton ball pillow  (12 inch)  499 元.jpg",
