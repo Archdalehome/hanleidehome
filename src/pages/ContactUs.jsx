@@ -12,9 +12,7 @@ const ContactUs = () => {
 
   useEffect(() => {
     // 初始化EmailJS
-    emailjs.init({
-      publicKey: 'HLbs9qc6BCnaZVw8u',
-    });
+    emailjs.init('HLbs9qc6BCnaZVw8u');
   }, []);
 
   const onFinish = async (values) => {
@@ -24,7 +22,7 @@ const ContactUs = () => {
       console.log('EmailJS配置信息 - Service ID:', 'service_ygcz5ga', ', Template ID:', 'template_smvljf6');
       
       const templateParams = {
-        to_email: 'sales@hanleidehome.com',
+        to_email: 'mfchen@139.com',
         from_name: values.name,
         from_email: values.email,
         subject: values.subject,
@@ -40,7 +38,7 @@ const ContactUs = () => {
       );
       
       console.log('邮件发送成功，服务器响应:', JSON.stringify(result, null, 2));
-      message.success('消息已成功发送！我们会尽快回复您。');
+      message.success('Massege sent successfully! We will get back to you soon.');
       form.resetFields();
     } catch (error) {
       console.error('邮件发送失败 - 详细错误信息:', error);
@@ -65,7 +63,7 @@ const ContactUs = () => {
         </Card>
         <Card className="info-card">
           <h2><MailOutlined /> Email</h2>
-          <p><a href="mailto:sales@hanleidehome.com">sales@hanleidehome.com</a></p>
+          <p><a href="mailto:mfchen@139.com">mfchen@139.com</a></p>
         </Card>
       </div>
 
