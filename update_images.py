@@ -54,8 +54,15 @@ def get_image_files():
                 "category": category
             })
     
-    # 首先按分类字母顺序排序，然后在每个分类内按文件名字母顺序排序
-    sorted_images = sorted(images, key=lambda x: (x['category'].lower(), x['name'].lower()))
+    # 从category中提取数字前缀作为排序依据
+    def get_category_order(image):
+        category = image['category']
+        match = re.match(r'^(\d+)', category)
+        order = int(match.group(1)) if match else float('inf')
+        return (order, image['name'].lower())
+    
+    # 按category的数字前缀排序，然后按文件名字母顺序排序
+    sorted_images = sorted(images, key=get_category_order)
     return sorted_images
 
 # 更新images.json文件

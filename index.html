@@ -336,7 +336,10 @@
                 categoryTitle.style.marginTop = '30px';
                 categoryTitle.style.marginBottom = '20px';
                 categoryTitle.style.color = '#333';
-                categoryTitle.textContent = category;
+                categoryTitle.style.fontSize = '18px';
+                // 去除category前的数字
+                const displayCategory = category.replace(/^\d+\s*/, '');
+                categoryTitle.textContent = displayCategory;
                 gallery.appendChild(categoryTitle);
                 
                 // 创建该category的图片容器
