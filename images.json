@@ -1,14 +1,6 @@
 {
   "images": [
     {
-      "path": "images/[Curtain] Linen blackout curtain (180x220cm) 699元.jpg",
-      "name": "[Curtain] Linen blackout curtain (180x220cm) 699元.jpg",
-      "title": "Linen blackout curtain",
-      "price": "699",
-      "size": "180x220cm",
-      "category": "Curtain"
-    },
-    {
       "path": "images/[Fabric Pillows]  Linen Square Pillow with Welt (20x20inch).jpg",
       "name": "[Fabric Pillows]  Linen Square Pillow with Welt (20x20inch).jpg",
       "title": "Linen Square Pillow with Welt",
@@ -47,6 +39,14 @@
       "price": "",
       "size": "30x30inch",
       "category": "Throw Blanket"
+    },
+    {
+      "path": "images/[Window Curtains] Linen blackout curtain (180x220cm) 699元.jpg",
+      "name": "[Window Curtains] Linen blackout curtain (180x220cm) 699元.jpg",
+      "title": "Linen blackout curtain",
+      "price": "699",
+      "size": "180x220cm",
+      "category": "Window Curtains"
     }
   ]
 }
