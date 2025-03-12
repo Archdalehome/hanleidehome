@@ -33,6 +33,14 @@
       "category": "2Throw Blanket"
     },
     {
+      "path": "images/[4Curtains] Linen blackout curtain (180x220cm) .jpg",
+      "name": "[4Curtains] Linen blackout curtain (180x220cm) .jpg",
+      "title": "Linen blackout curtain",
+      "price": "",
+      "size": "180x220cm",
+      "category": "4Curtains"
+    },
+    {
       "path": "images/1[Pillows] Cotton Kidney Pillow, Flrange Board,Zipper closure(12x21 inch).jpg",
       "name": "1[Pillows] Cotton Kidney Pillow, Flrange Board,Zipper closure(12x21 inch).jpg",
       "title": "1[Pillows] Cotton Kidney Pillow, Flrange Board,Zipper closure",
@@ -55,14 +63,6 @@
       "price": "",
       "size": "22x 22 inch",
       "category": "Napkins"
-    },
-    {
-      "path": "images/[Window Curtains] Linen blackout curtain (180x220cm) .jpg",
-      "name": "[Window Curtains] Linen blackout curtain (180x220cm) .jpg",
-      "title": "Linen blackout curtain",
-      "price": "",
-      "size": "180x220cm",
-      "category": "Window Curtains"
     }
   ]
 }
