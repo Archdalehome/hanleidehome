@@ -14,8 +14,8 @@ const ContactUs = () => {
     setLoading(true);
     try {
       await emailjs.send(
-        'YOUR_SERVICE_ID', // 需要替换为实际的 EmailJS Service ID
-        'YOUR_TEMPLATE_ID', // 需要替换为实际的 EmailJS Template ID
+        'service_aqxvpzm',
+        'template_aqxvpzm',
         {
           to_email: 'sales@hanleidehome.com',
           from_name: values.name,
@@ -23,7 +23,7 @@ const ContactUs = () => {
           subject: values.subject,
           message: values.message,
         },
-        'YOUR_PUBLIC_KEY' // 需要替换为实际的 EmailJS Public Key
+        'Aq-xvpzm_123456'
       );
       message.success('消息已成功发送！');
       form.resetFields();
