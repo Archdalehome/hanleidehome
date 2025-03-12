@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Hanleide Home Textiles</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        .nav-bar {
+            background-color: white;
+            padding: 15px 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            font-size: 16px;
+            color: #333;
+            position: relative;
+        }
+
+        .nav-bar span {
+            display: inline-flex;
+            align-items: center;
+        }
+
+        .nav-bar .menu-icon {
+            margin-right: 10px;
+            cursor: pointer;
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            padding: 4px;
+            border-radius: 4px;
+        }
+
+        .nav-bar .menu-icon:hover {
+            background-color: #f5f5f5;
+        }
+
+        .dropdown-menu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 20px;
+            background-color: white;
+            min-width: 180px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            border-radius: 4px;
+            z-index: 1000;
+            padding: 8px 0;
+        }
+
+        .dropdown-menu.show {
+            display: block;
+            animation: fadeIn 0.2s ease;
+        }
+
+        .dropdown-menu a {
+            display: block;
+            padding: 10px 20px;
+            color: #333;
+            text-decoration: none;
+            transition: background-color 0.2s;
+        }
+
+        .dropdown-menu a:hover {
+            background-color: #f5f5f5;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .about-section {
+            margin-bottom: 40px;
+        }
+
+        h1 {
+            color: #333;
+            font-size: 32px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        h2 {
+            color: #444;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            color: #666;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav-bar">
+        <span>
+            <svg class="menu-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="3" y1="12" x2="21" y2="12"></line>
+                <line x1="3" y1="6" x2="21" y2="6"></line>
+                <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+            Hanleide Home Textiles/About Us
+        </span>
+        <div class="dropdown-menu" id="dropdownMenu">
+            <a href="about.html">About us</a>
+            <a href="index.html">Our Product</a>
+            <a href="#">Contact us</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <h1>About Hanleide Home Textiles</h1>
+        
+        <div class="about-section">
+            <h2>公司简介</h2>
+            <p>Hanleide Home Textiles (HHT) 是一家专注于高端家用纺织品的领先企业。我们致力于将舒适、风格和品质完美融合，专门从事麻棉混纺高端家用面料及其衍生家居产品的研发和生产，为每个生活空间带来精致与实用的完美结合。</p>
+        </div>
+
+        <div class="about-section">
+            <h2>产品组合</h2>
+            <p>我们的产品系列包含多种精心制作的家居用品：从柔软舒适的枕头，为您的一天画上完美句点；到为任何座椅增添优雅与舒适的靠垫；再到在寒冷夜晚给您温暖的精美毯子，以及为您的餐桌增添优雅魅力的餐巾。我们的窗帘不仅美化您的窗户，还能提供隐私保护和光线调节，全方位提升您的居家环境。</p>
+        </div>
+
+        <div class="about-section">
+            <h2>业务模式</h2>
+            <p>HHT拥有双重业务模式：</p>
+            <p>1. 为全球高端家居客户提供顶级OEM服务。我们的现代化生产设施配备skilled工匠和技术人员，确保每件产品都符合最严格的标准。我们深知品牌标识的重要性，与合作伙伴密切合作，将设计理念从概念转化为最终产品。</p>
+            <p>2. 与国际知名面料生产商开展合作开发和销售。这种协同效应让我们能够将麻棉材料的专业知识与全球创新设计理念相结合，推出引领潮流的产品，以独特的质地、图案和功能性为家居装饰树立新标准。</p>
+        </div>
+
+        <div class="about-section">
+            <h2>质量承诺</h2>
+            <p>质量承诺贯穿我们运营的每个环节。我们只选用最优质的麻和棉纤维，确保产品的耐用性、透气性和奢华质感。从原材料检验到成品测试，每个生产阶段都实施严格的质量控制措施。这种对质量的执着使我们赢得了客户的信任和忠诚，成为他们首选的家用纺织品合作伙伴。</p>
+        </div>
+    </div>
+
+    <footer class="footer">
+        © 2025 Hanleide Home Textiles
+    </footer>
+
+    <script>
+        // 添加菜单切换功能
+        document.querySelector('.menu-icon').addEventListener('click', function(e) {
+            e.stopPropagation();
+            const dropdownMenu = document.getElementById('dropdownMenu');
+            dropdownMenu.classList.toggle('show');
+        });
+
+        // 点击页面其他地方关闭菜单
+        document.addEventListener('click', function() {
+            const dropdownMenu = document.getElementById('dropdownMenu');
+            if (dropdownMenu.classList.contains('show')) {
+                dropdownMenu.classList.remove('show');
+            }
+        });
+    </script>
+</body>
+</html>
