@@ -5,35 +5,40 @@
       "name": "Napkins in Linen (self-Fringe 22 inch).jpg",
       "title": "Napkins in Linen",
       "price": "",
-      "size": "self-Fringe 22 inch"
+      "size": "self-Fringe 22 inch",
+      "category": ""
     },
     {
       "path": "images/Pillow in Cotton  (Ball 12 inch).jpg",
       "name": "Pillow in Cotton  (Ball 12 inch).jpg",
       "title": "Pillow in Cotton",
       "price": "",
-      "size": "Ball 12 inch"
+      "size": "Ball 12 inch",
+      "category": ""
     },
     {
       "path": "images/Pillow in Cotton (Flange edge 20x20inch).jpg",
       "name": "Pillow in Cotton (Flange edge 20x20inch).jpg",
       "title": "Pillow in Cotton",
       "price": "",
-      "size": "Flange edge 20x20inch"
+      "size": "Flange edge 20x20inch",
+      "category": ""
     },
     {
       "path": "images/Pillow in Linen (Welt edge 20x20inch).jpg",
       "name": "Pillow in Linen (Welt edge 20x20inch).jpg",
       "title": "Pillow in Linen",
       "price": "",
-      "size": "Welt edge 20x20inch"
+      "size": "Welt edge 20x20inch",
+      "category": ""
     },
     {
       "path": "images/Throw Blanket Linen (Fringe-edge 30x30inch).jpg",
       "name": "Throw Blanket Linen (Fringe-edge 30x30inch).jpg",
       "title": "Throw Blanket Linen",
       "price": "",
-      "size": "Fringe-edge 30x30inch"
+      "size": "Fringe-edge 30x30inch",
+      "category": ""
     }
   ]
 }
