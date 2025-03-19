@@ -1,6 +1,38 @@
 {
   "images": [
     {
+      "path": "images/[0Curtains] Blue  Velvet Blackout Curtain (50x96 inch).jpg",
+      "name": "[0Curtains] Blue  Velvet Blackout Curtain (50x96 inch).jpg",
+      "title": "Blue Velvet Blackout Curtain",
+      "price": "",
+      "size": "50x96 inch",
+      "category": "0Curtains"
+    },
+    {
+      "path": "images/[0Curtains] Green Velvet Blackout Curtain (50x120 inch).jpg",
+      "name": "[0Curtains] Green Velvet Blackout Curtain (50x120 inch).jpg",
+      "title": "Green Velvet Blackout Curtain",
+      "price": "",
+      "size": "50x120 inch",
+      "category": "0Curtains"
+    },
+    {
+      "path": "images/[0Curtains] Grey Velvet Blackout Curtain (50x84 inch).jpg",
+      "name": "[0Curtains] Grey Velvet Blackout Curtain (50x84 inch).jpg",
+      "title": "Grey Velvet Blackout Curtain",
+      "price": "",
+      "size": "50x84 inch",
+      "category": "0Curtains"
+    },
+    {
+      "path": "images/[0Curtains] Pink Velvet Blackout Curtain (50x100 inch).jpg",
+      "name": "[0Curtains] Pink Velvet Blackout Curtain (50x100 inch).jpg",
+      "title": "Pink Velvet Blackout Curtain",
+      "price": "",
+      "size": "50x100 inch",
+      "category": "0Curtains"
+    },
+    {
       "path": "images/[1Pillows]  Linen Square Pillow with Welt (20x20inch).jpg",
       "name": "[1Pillows]  Linen Square Pillow with Welt (20x20inch).jpg",
       "title": "Linen Square Pillow with Welt",
