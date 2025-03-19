@@ -25,6 +25,14 @@
       "category": "0Curtains"
     },
     {
+      "path": "images/[0Curtains] Linen blackout curtain (180x220cm) .jpg",
+      "name": "[0Curtains] Linen blackout curtain (180x220cm) .jpg",
+      "title": "Linen blackout curtain",
+      "price": "",
+      "size": "180x220cm",
+      "category": "0Curtains"
+    },
+    {
       "path": "images/[0Curtains] Pink Velvet Blackout Curtain (50x100 inch).jpg",
       "name": "[0Curtains] Pink Velvet Blackout Curtain (50x100 inch).jpg",
       "title": "Pink Velvet Blackout Curtain",
@@ -87,14 +95,6 @@
       "price": "",
       "size": "22x 22 inch",
       "category": "3Napkins"
-    },
-    {
-      "path": "images/[4Curtains] Linen blackout curtain (180x220cm) .jpg",
-      "name": "[4Curtains] Linen blackout curtain (180x220cm) .jpg",
-      "title": "Linen blackout curtain",
-      "price": "",
-      "size": "180x220cm",
-      "category": "4Curtains"
     }
   ]
 }
