@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hanleide Furniture</title>
+    <!-- 添加网站图标 -->
+    <link rel="icon" href="pictures_about/logo.png" type="image/png">
+    <link rel="shortcut icon" href="pictures_about/logo.png" type="image/png">
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        .nav-bar {
+            background-color: white;
+            padding: 15px 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            font-size: 16px;
+            color: #333;
+            position: relative;
+        }
+
+        .nav-bar span {
+            display: inline-flex;
+            align-items: center;
+        }
+
+        .nav-bar .menu-icon {
+            margin-right: 10px;
+            cursor: pointer;
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            padding: 4px;
+            border-radius: 4px;
+        }
+
+        .nav-bar .menu-icon:hover {
+            background-color: #f5f5f5;
+        }
+
+        .dropdown-menu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 20px;
+            background-color: white;
+            min-width: 180px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            border-radius: 4px;
+            z-index: 1000;
+            padding: 8px 0;
+        }
+
+        .dropdown-menu.show {
+            display: block;
+            animation: fadeIn 0.2s ease;
+        }
+
+        .dropdown-menu a {
+            display: block;
+            padding: 10px 20px;
+            color: #333;
+            text-decoration: none;
+            transition: background-color 0.2s;
+        }
+
+        .dropdown-menu a:hover {
+            background-color: #f5f5f5;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .about-section {
+            margin-bottom: 40px;
+        }
+
+        .about-section h1 {
+            color: #333;
+            font-size: 28px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .about-section p {
+            color: #555;
+            line-height: 1.6;
+            margin-bottom: 20px;
+            font-size: 16px;
+        }
+
+        .about-image {
+            width: 100%;
+            max-width: 600px;
+            margin: 30px auto;
+            display: block;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .values-section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-top: 40px;
+        }
+
+        .value-card {
+            width: calc(33.333% - 20px);
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+
+        .value-card h3 {
+            color: #333;
+            margin-top: 0;
+            margin-bottom: 15px;
+            font-size: 18px;
+        }
+
+        .value-card p {
+            color: #666;
+            line-height: 1.5;
+            font-size: 14px;
+        }
+
+        @media (max-width: 768px) {
+            .value-card {
+                width: 100%;
+            }
+        }
+
+        .footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            color: #666;
+            font-size: 14px;
+        }
+        
+        /* 添加图片展示样式 */
+        .image-gallery {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin: 20px 0;
+        }
+        
+        .quality-image {
+            width: 400px;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        @media (max-width: 900px) {
+            .quality-image {
+                width: 100%;
+                height: auto;
+                max-width: 400px;
+            }
+        }
+        
+        /* 添加标题居中样式 */
+        .about-section h2,
+        .about-section h3 {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav-bar">
+        <span>
+            <svg class="menu-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="3" y1="12" x2="21" y2="12"></line>
+                <line x1="3" y1="6" x2="21" y2="6"></line>
+                <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+            Hanleide Furniture/Quality</span>
+        <div class="dropdown-menu" id="dropdownMenu">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="products.html">Products</a>
+            <a href="quality.html">Quality</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="about-section">
+            <h1>Our Quality</h1>
+            
+            <p>Hanleide Furniture(below to call we or our) warrants our products to be free from defects in material and workmanship under normal residential use and service, as set forth in our statement of limited warranty. We limited warranty does not apply to fabric. Our sole and exclusive obligation under its limited warranty is to repair or replace at the Company's option all products that are returned to it within the applicable warranty period and judged by the Company to be defective. See we limited warranty in the Limited Warranties section of this guide. No other representations and/or warranties, either expressed or implied are made with respect to the products, including, but not limited to, any implied warranties of merchantability, fitness for a particular purpose, title or non-infringement or any other warranties that may arise from usage or trade or course of dealing.</p>
+            
+            <h2>Why we can produce a cozy and long lasting sofa?</h2>
+            
+            <h3>Pure-natural Fiber Fabrics</h3>
+            <div class="image-gallery">
+                <img src="quality_image/cotton.jpg" alt="Cotton Fabric" class="quality-image">
+                <img src="quality_image/Linen.jpg" alt="Linen Fabric" class="quality-image">
+            </div>
+            <p>We exclusively use pure cotton and linen fabrics for our sofas to ensure excellent skin comfort and touch. These natural fibers allow the sofa to breathe, providing a comfortable seating experience in all seasons while maintaining durability and elegance over time.</p>
+            
+            <div class="image-gallery">
+                <img src="quality_image/fabric-color-test.jpg" alt="Fabric Color Test" class="quality-image">
+                <img src="quality_image/fabric-martindale-test.jpg" alt="Fabric Martindale Test" class="quality-image">
+            </div>
+            <p>All fabrics undergo rigorous testing and inspection in our factory before being approved for production. Our comprehensive quality control includes color fastness tests to ensure consistent appearance over time and Martindale abrasion tests to verify durability and resistance to wear. Only fabrics that meet our strict standards are used in our furniture.</p>
+            
+            <h3>High Strength Frame Construction</h3>
+            <div class="image-gallery">
+                <img src="quality_image/Solid-frame.jpg" alt="Solid Wood Frame" class="quality-image">
+                <img src="quality_image/Plywood-frame.jpg" alt="Plywood Frame" class="quality-image">
+            </div>
+            <p>Our sofa frames are crafted from solid hardwood using traditional mortise and tenon joinery techniques. This construction method ensures the frame maintains its structural integrity over years of use without warping or weakening. Additionally, all our wood materials meet strict environmental standards, making our furniture both durable and eco-friendly.</p>
+            
+            <h3>Durable Filling Materials</h3>
+            <div class="image-gallery">
+                <img src="quality_image/foam.jpg" alt="High-Density Foam" class="quality-image">
+                <img src="quality_image/foam test.jpg" alt="Foam Testing" class="quality-image">
+            </div>
+            <p>We use premium high-density, high-resilience foam with densities ranging from D30 to D40 for our cushions. Each batch of foam undergoes internal testing and inspection to verify its performance characteristics. This rigorous quality control ensures our sofas maintain excellent resilience and comfort even after years of daily use, preventing sagging and maintaining the original shape and support.</p>
+        </div>
+        
+        <div class="values-section">
+            <!-- 保修信息卡片已删除 -->
+        </div>
+    </div>
+
+    <footer class="footer">
+        © 2025 Hanleide Frniture
+    </footer>
+
+    <script>
+        // 添加菜单切换功能
+        document.querySelector('.menu-icon').addEventListener('click', function(e) {
+            e.stopPropagation();
+            const dropdownMenu = document.getElementById('dropdownMenu');
+            dropdownMenu.classList.toggle('show');
+        });
+
+        // 点击页面其他地方关闭菜单
+        document.addEventListener('click', function() {
+            const dropdownMenu = document.getElementById('dropdownMenu');
+            if (dropdownMenu.classList.contains('show')) {
+                dropdownMenu.classList.remove('show');
+            }
+        });
+    </script>
+</body>
+</html>
+
