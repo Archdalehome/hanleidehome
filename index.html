@@ -1,70 +1,66 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en-US">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hanleide Home Group</title>
+    <title>Hanleide Furniture | OEM/ODM Fabric Slipcover Upholstery Furniture Manufacturer - Haining, China</title>
+    <meta name="description" content="Hanleide Furniture - professional OEM &amp; ODM upholstery furniture manufacturer based in Haining, China. 20,000 sqm factory, 200 containers/month, eight-way hand-tied solid wood frames, pure natural fiber fabrics. B2B wholesale for global retailers and importers.">
+    <meta name="keywords" content="Hanleide Furniture, OEM upholstery furniture manufacturer China, ODM furniture factory Haining, fabric sofa wholesale, upholstery furniture supplier, B2B furniture manufacturer, eight-way hand tied frame, custom furniture manufacturer, furniture factory China, wholesale sofa manufacturer">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Hanleide Furniture">
+    <meta name="geo.region" content="CN-33">
+    <meta name="geo.placename" content="Haining, Zhejiang">
+    <meta name="theme-color" content="#ffffff">
+    <!-- JSON-LD Structured Data: Organization -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Hanleide Furniture",
+        "alternateName": "Chen Furniture",
+        "url": "https://www.hanleidefurniture.com",
+        "description": "OEM/ODM upholstery furniture manufacturer based in Haining, China. 20,000 sqm factory, 200 containers/month capacity.",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Haining",
+            "addressRegion": "Zhejiang",
+            "addressCountry": "CN"
+        },
+        "areaServed": ["North America", "Europe", "Australia", "Middle East"],
+        "businessFunction": ["OEM", "ODM", "Wholesale"],
+        "manufacturer": {
+            "@type": "FurnitureManufacturer",
+            "name": "Hanleide Furniture"
+        },
+        "sameAs": [
+            "https://www.hanleidefurniture.com"
+        ]
+    }
+    </script>
+    <!-- Open Graph / Social Media -->
+    <meta property="og:title" content="Hanleide Furniture | OEM/ODM Upholstery Manufacturer Haining China">
+    <meta property="og:description" content="Professional OEM &amp; ODM upholstery furniture manufacturer. 20,000 sqm factory, 200 containers/month. B2B wholesale for global retailers.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.hanleidefurniture.com">
+    <meta property="og:image" content="pictures_disply/product1.jpg">
+    <meta property="og:locale" content="en_US">
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Hanleide Furniture | OEM/ODM Upholstery Manufacturer">
+    <meta name="twitter:description" content="Premium OEM/ODM upholstery furniture manufacturer in Haining, China.">
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://www.hanleidefurniture.com">
+    <!-- 添加网站图标 -->
+    <link rel="icon" href="pictures_about/logo.png" type="image/png">
+    <link rel="shortcut icon" href="pictures_about/logo.png" type="image/png">
     <style>
-        .login-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
+        body {
+            margin: 0;
+            padding: 20px;
             background-color: #f5f5f5;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         }
 
-        .login-box {
-            background: white;
-            padding: 30px;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-            width: 100%;
-            max-width: 320px;
-        }
-
-        .login-title {
-            text-align: center;
-            margin-bottom: 20px;
-            color: #333;
-            font-size: 24px;
-        }
-
-        .login-form input {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 15px;
-            border: 1px solid #ddd;
-            border-radius: 4px;
-            font-size: 14px;
-            box-sizing: border-box;
-        }
-
-        .login-form button {
-            width: 100%;
-            padding: 12px;
-            background-color: #333;
-            color: white;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-            font-size: 16px;
-            transition: background-color 0.2s;
-        }
-
-        .login-form button:hover {
-            background-color: #444;
-        }
-
-        .login-error {
-            color: #ff4444;
-            text-align: center;
-            margin-bottom: 15px;
-            display: none;
-        }
-
-        .main-content {
-            display: none;
-        }
         .nav-bar {
             background-color: white;
             padding: 15px 20px;
@@ -128,113 +124,93 @@
             from { opacity: 0; transform: translateY(-10px); }
             to { opacity: 1; transform: translateY(0); }
         }
-        body {
-            margin: 0;
-            padding: 20px;
-            background-color: #f5f5f5;
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+        /* Slideshow styles */
+        .slideshow-container {
+            position: relative;
+            max-width: 100%;
+            height: calc(100vh - 180px);
+            margin: 0 auto;
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
         }
 
-        .fullscreen-container {
+        .slide {
             display: none;
-            position: fixed;
-            top: 0;
-            left: 0;
             width: 100%;
             height: 100%;
-            background-color: rgba(0, 0, 0, 0.9);
-            z-index: 1000;
-            cursor: pointer;
-        }
-
-        .fullscreen-image {
-            max-width: 90%;
-            max-height: 90%;
             position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            object-fit: contain;
+            transition: opacity 1s ease-in-out;
         }
 
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
+        .slide.active {
+            display: block;
+            opacity: 1;
         }
 
-        .gallery {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-            justify-content: flex-start;
-        }
-
-        .image-card {
-            width: calc(25% - 15px);
-            background: white;
-            border-radius: 8px;
-            overflow: hidden;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-            transition: transform 0.2s ease;
-        }
-
-        .image-card:hover {
-            transform: translateY(-5px);
-        }
-
-        .image-container {
-            aspect-ratio: 1;
-            overflow: hidden;
-        }
-
-        .image-container img {
+        .slide img {
             width: 100%;
             height: 100%;
             object-fit: cover;
-            transition: transform 0.3s ease;
         }
 
-        .image-card:hover img {
-            transform: scale(1.05);
+        /* Slideshow controls */
+        .prev, .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            padding: 16px;
+            margin-top: -22px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+            background-color: rgba(0,0,0,0.3);
         }
 
-        .title {
-            padding: 10px;
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+
+        .prev:hover, .next:hover {
+            background-color: rgba(0,0,0,0.8);
+        }
+
+        /* Dots */
+        .dots-container {
             text-align: center;
-            color: #333;
-            font-size: 14px;
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
+            padding: 15px 0;
         }
 
-        .image-info {
-            padding: 0 10px 10px;
-            text-align: center;
-            color: #666;
-            font-size: 12px;
+        .dot {
+            cursor: pointer;
+            height: 12px;
+            width: 12px;
+            margin: 0 5px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
         }
 
-        .price, .size {
-            margin-top: 5px;
+        .active-dot, .dot:hover {
+            background-color: #717171;
         }
 
-        @media (max-width: 1024px) {
-            .image-card {
-                width: calc(33.333% - 14px);
-            }
+        /* Fade animation */
+        .fade {
+            animation-name: fade;
+            animation-duration: 1.5s;
         }
 
-        @media (max-width: 768px) {
-            .image-card {
-                width: calc(50% - 10px);
-            }
-        }
-
-        @media (max-width: 480px) {
-            .image-card {
-                width: 100%;
-            }
+        @keyframes fade {
+            from {opacity: .4}
+            to {opacity: 1}
         }
 
         .footer {
@@ -244,22 +220,17 @@
             color: #666;
             font-size: 14px;
         }
+
+        /* Mobile portrait crop adjustment */
+        @media (max-width: 768px) and (orientation: portrait) {
+            .slide img {
+                object-fit: cover;
+                object-position: 30% center;
+            }
+        }
     </style>
 </head>
 <body>
-    <div class="login-container" id="loginContainer">
-        <div class="login-box">
-            <h2 class="login-title">Hanleide Home Group</h2>
-            <div class="login-error" id="loginError">用户名或密码错误</div>
-            <form class="login-form" id="loginForm" onsubmit="return handleLogin(event)">
-                <input type="text" id="username" placeholder="用户名" required>
-                <input type="password" id="password" placeholder="密码" required>
-                <button type="submit">登录</button>
-            </form>
-        </div>
-    </div>
-
-    <div class="main-content" id="mainContent">
     <div class="nav-bar">
         <span>
             <svg class="menu-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -267,32 +238,55 @@
                 <line x1="3" y1="6" x2="21" y2="6"></line>
                 <line x1="3" y1="18" x2="21" y2="18"></line>
             </svg>
-            Hanleide Home Textiles/Our Products
+            Hanleide Furniture - OEM/ODM Upholstery Manufacturer
         </span>
         <div class="dropdown-menu" id="dropdownMenu">
-            <a href="about.html">About us</a>
-            <a href="index.html">Our Product</a>
-            <a href="contact.html">Contact us</a>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="products.html">Our Products</a>
+            <a href="fabrics.html">Our Fabrics</a>
+            <a href="quality.html">Our Quality</a>
+            <a href="contact.html">Contact Us</a>
         </div>
     </div>
-    <div class="container">
-        <div class="gallery" id="gallery"></div>
-    </div>
-    <div class="fullscreen-container" id="fullscreenContainer">
-        <img class="fullscreen-image" id="fullscreenImage" alt="Fullscreen image">
+
+    <!-- Slideshow container -->
+    <div class="slideshow-container">
+        <div class="slide fade">
+            <img src="pictures_disply/product1.jpg" alt="Hanleide Furniture - OEM upholstery sofa product showcase">
+        </div>
+        <div class="slide fade">
+            <img src="pictures_disply/product2.jpg" alt="Hanleide Furniture - fabric upholstered furniture collection">
+        </div>
+        <div class="slide fade">
+            <img src="pictures_disply/product3.jpg" alt="Hanleide Furniture - custom upholstery furniture B2B wholesale">
+        </div>
+
+        <!-- Prev/Next buttons -->
+        <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+        <a class="next" onclick="changeSlide(1)">&#10095;</a>
     </div>
 
-    <script type="module">
-        import { loadImages } from './imageLoader.js';
+    <!-- Dots -->
+    <div class="dots-container">
+        <span class="dot" onclick="currentSlide(0)"></span>
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+    </div>
 
-        // 添加菜单切换功能
+    <footer class="footer">
+        &copy; 2026 Hanleide Furniture | OEM/ODM Upholstery Furniture Manufacturer - Haining, Zhejiang, China
+    </footer>
+
+    <script>
+        // Toggle dropdown menu
         document.querySelector('.menu-icon').addEventListener('click', function(e) {
             e.stopPropagation();
             const dropdownMenu = document.getElementById('dropdownMenu');
             dropdownMenu.classList.toggle('show');
         });
 
-        // 点击页面其他地方关闭菜单
+        // Close menu when clicking elsewhere
         document.addEventListener('click', function() {
             const dropdownMenu = document.getElementById('dropdownMenu');
             if (dropdownMenu.classList.contains('show')) {
@@ -300,149 +294,58 @@
             }
         });
 
-        function showFullscreen(imageSrc) {
-            const container = document.getElementById('fullscreenContainer');
-            const image = document.getElementById('fullscreenImage');
-            image.src = imageSrc;
-            container.style.display = 'block';
+        // Slideshow functionality
+        let slideIndex = 0;
+        const slides = document.getElementsByClassName("slide");
+        const dots = document.getElementsByClassName("dot");
+
+        // Show initial slide
+        showSlides();
+
+        // Auto slideshow
+        let slideInterval = setInterval(function() {
+            changeSlide(1);
+        }, 5000);
+
+        // Change slide
+        function changeSlide(n) {
+            slideIndex += n;
+            showSlides();
         }
 
-        function hideFullscreen() {
-            const container = document.getElementById('fullscreenContainer');
-            container.style.display = 'none';
+        // Set current slide
+        function currentSlide(n) {
+            slideIndex = n;
+            showSlides();
         }
 
-        async function displayImages() {
-            const data = await loadImages();
-            const images = data.images;
-            const gallery = document.getElementById('gallery');
-            gallery.innerHTML = '';
-            
-            // 按category对图片进行分组
-            const imagesByCategory = {};
-            images.forEach(imageData => {
-                const category = imageData.category || '未分类';
-                if (!imagesByCategory[category]) {
-                    imagesByCategory[category] = [];
-                }
-                imagesByCategory[category].push(imageData);
-            });
-            
-            // 按category创建图片组
-            Object.entries(imagesByCategory).forEach(([category, categoryImages]) => {
-                // 创建category标题
-                const categoryTitle = document.createElement('h2');
-                categoryTitle.style.width = '100%';
-                categoryTitle.style.marginTop = '30px';
-                categoryTitle.style.marginBottom = '20px';
-                categoryTitle.style.color = '#333';
-                categoryTitle.style.fontSize = '18px';
-                // 去除category前的数字
-                const displayCategory = category.replace(/^\d+\s*/, '');
-                categoryTitle.textContent = displayCategory;
-                gallery.appendChild(categoryTitle);
-                
-                // 创建该category的图片容器
-                const categoryContainer = document.createElement('div');
-                categoryContainer.style.width = '100%';
-                categoryContainer.style.display = 'flex';
-                categoryContainer.style.flexWrap = 'wrap';
-                categoryContainer.style.gap = '20px';
-                categoryContainer.style.justifyContent = 'flex-start';
-                
-                // 添加该category的所有图片
-                categoryImages.forEach(imageData => {
-                    const imagePath = imageData.path;
-                    const imageCard = document.createElement('div');
-                    imageCard.className = 'image-card';
-                    
-                    const imageContainer = document.createElement('div');
-                    imageContainer.className = 'image-container';
-                    
-                    const img = document.createElement('img');
-                    img.src = imagePath;
-                    img.alt = imageData.title || '';
-                    img.onclick = () => showFullscreen(imagePath);
-                    
-                    const imageInfo = document.createElement('div');
-                    imageInfo.className = 'image-info';
-                    
-                    const title = document.createElement('div');
-                    title.className = 'title';
-                    title.textContent = imageData.title || '';
-                    
-                    if (imageData.price) {
-                        const price = document.createElement('div');
-                        price.className = 'price';
-                        price.textContent = `Price：${imageData.price}元`;
-                        imageInfo.appendChild(price);
-                    }
-                    
-                    if (imageData.size) {
-                        const size = document.createElement('div');
-                        size.className = 'size';
-                        size.textContent = `Size：${imageData.size}`;
-                        imageInfo.appendChild(size);
-                    }
-                    
-                    imageContainer.appendChild(img);
-                    imageCard.appendChild(imageContainer);
-                    imageCard.appendChild(title);
-                    imageCard.appendChild(imageInfo);
-                    categoryContainer.appendChild(imageCard);
-                });
-                
-                gallery.appendChild(categoryContainer);
-            });
-        }
-
-        // 页面加载时获取图片列表
-        window.addEventListener('load', displayImages);
-
-        // 添加全屏容器的点击事件
-        document.getElementById('fullscreenContainer').addEventListener('click', hideFullscreen);
-    </script>
-    <footer class="footer">
-        © 2025 Hanleide Home Textiles
-    </footer>
-    </div>
-
-    <script>
-        // 检查登录状态
-        function checkLoginStatus() {
-            const isLoggedIn = sessionStorage.getItem('isLoggedIn');
-            const loginContainer = document.getElementById('loginContainer');
-            const mainContent = document.getElementById('mainContent');
-
-            if (isLoggedIn === 'true') {
-                loginContainer.style.display = 'none';
-                mainContent.style.display = 'block';
-                displayImages(); // 加载图片
-            } else {
-                loginContainer.style.display = 'flex';
-                mainContent.style.display = 'none';
+        function showSlides() {
+            // Handle index bounds
+            if (slideIndex >= slides.length) {
+                slideIndex = 0;
             }
-        }
-
-        // 处理登录
-        function handleLogin(event) {
-            event.preventDefault();
-            const username = document.getElementById('username').value;
-            const password = document.getElementById('password').value;
-            const loginError = document.getElementById('loginError');
-
-            if (username === 'Partner' && password === '01083810') {
-                sessionStorage.setItem('isLoggedIn', 'true');
-                checkLoginStatus();
-                loginError.style.display = 'none';
-            } else {
-                loginError.style.display = 'block';
-                sessionStorage.removeItem('isLoggedIn');
+            if (slideIndex < 0) {
+                slideIndex = slides.length - 1;
             }
+
+            // Hide all slides
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+                dots[i].classList.remove("active-dot");
+            }
+
+            // Show current slide
+            slides[slideIndex].style.display = "block";
+            dots[slideIndex].classList.add("active-dot");
         }
 
-        // 页面加载时检查登录状态
-        window.addEventListener('load', checkLoginStatus);
+        // Reset timer when user interacts
+        document.querySelector('.slideshow-container').addEventListener('click', function() {
+            clearInterval(slideInterval);
+            slideInterval = setInterval(function() {
+                changeSlide(1);
+            }, 5000);
+        });
     </script>
 </body>
 </html>
